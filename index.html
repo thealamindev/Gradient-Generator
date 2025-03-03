@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Generator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section id="mainScreen">
+    <div class="container">
+        <div class="header">
+          <h1>Gradient Generator</h1>
+        </div>
+        
+        <div id="gradientDisplay" class="gradient-display"></div>
+        
+        <div class="controls">
+          <div class="control-group">
+            <h3>Colors</h3>
+            <div id="colorInputs" class="colors">
+              <div class="color-input">
+                <input type="color" value="#4a6cf7" data-index="0">
+                <input type="text" value="#4a6cf7" data-index="0">
+              </div>
+              <div class="color-input">
+                <input type="color" value="#f953c6" data-index="1">
+                <input type="text" value="#f953c6" data-index="1">
+              </div>
+            </div>
+            <button id="addColorBtn" class="add-color">Add Color</button>
+          </div>
+          
+          <div class="control-group">
+            <h3>Gradient Type</h3>
+            <div class="gradient-type">
+              <select id="gradientType">
+                <option value="linear">Linear</option>
+                <option value="radial">Radial</option>
+                <option value="conic">Conic</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="control-group">
+            <h3>Direction</h3>
+            <div class="direction-controls">
+              <select id="direction">
+                <option value="to right">→ Right</option>
+                <option value="to left">← Left</option>
+                <option value="to bottom">↓ Bottom</option>
+                <option value="to top">↑ Top</option>
+                <option value="to bottom right">↘ Bottom Right</option>
+                <option value="to bottom left">↙ Bottom Left</option>
+                <option value="to top right">↗ Top Right</option>
+                <option value="to top left">↖ Top Left</option>
+              </select>
+              
+              <input id="angleInput" type="number" placeholder="Angle (deg)" min="0" max="360" value="90" style="display: none;">
+            </div>
+          </div>
+          
+          <div id="radialOptions" style="display: none;" class="control-group">
+            <h3>Radial Options</h3>
+            <select id="radialShape">
+              <option value="circle">Circle</option>
+              <option value="ellipse">Ellipse</option>
+            </select>
+            <select id="radialPosition">
+              <option value="center">Center</option>
+              <option value="top">Top</option>
+              <option value="right">Right</option>
+              <option value="bottom">Bottom</option>
+              <option value="left">Left</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="output">
+          <h3>CSS Code</h3>
+          <textarea id="cssOutput" readonly></textarea>
+          <button id="copyBtn" class="copy-btn">Copy to Clipboard</button>
+        </div>
+      </div>
+</section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

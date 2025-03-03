@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+#mainScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 32px;
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+  
+
+  .container {
+    width: 100%;
+    max-width: 800px;
+    background: linear-gradient(to right, #42275a, #734b6d);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #fff;
+  }
+
+  .header {
+    background: linear-gradient(to right, #42275a, #734b6d);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .gradient-display {
+    height: 200px;
+    transition: background 0.3s ease;
+  }
+
+  .controls {
+    padding: 1.5rem;
+  }
+
+  .control-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .color-input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .color-input input[type="color"] {
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .color-input input[type="text"] {
+    width: 90px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .gradient-type, .direction-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  select, button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  button {
+    background: linear-gradient(to right, #642b73, #c6426e);
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background: linear-gradient(to right, #642b73, #c6426e);
+  }
+
+  .add-color {
+    margin-top: 1rem;
+  }
+
+  .output {
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+  }
+
+  textarea {
+    width: 100%;
+    height: 80px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    font-family: monospace;
+  }
+
+  .copy-btn {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    .colors {
+      flex-direction: column;
+    }
+  }
+ 
