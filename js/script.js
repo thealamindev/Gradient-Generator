@@ -87,9 +87,9 @@
       updateGradient();
     }
 
-    // Initialize event listeners
+    // Initialize
     function initEventListeners() {
-      // Color input events
+      // Color input 
       colorInputs.addEventListener('input', function(e) {
         if (e.target.type === 'color') {
           const index = e.target.dataset.index;
@@ -124,15 +124,15 @@
         updateGradient();
       });
       
-      // Direction change
+      // Direction 
       direction.addEventListener('change', updateGradient);
       angleInput.addEventListener('input', updateGradient);
       
-      // Radial options
+      // Radial 
       radialShape.addEventListener('change', updateGradient);
       radialPosition.addEventListener('change', updateGradient);
       
-      // Copy to clipboard
+      // Copy to Code
       copyBtn.addEventListener('click', function() {
         cssOutput.select();
         document.execCommand('copy');
@@ -149,5 +149,5 @@
       updateGradient();
     }
 
-    // Run initialization
+   
     init();
