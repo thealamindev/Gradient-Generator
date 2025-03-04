@@ -103,8 +103,8 @@
 
   .output {
     padding: 1.5rem;
-    background-color: #f9f9f9;
-    border-top: 1px solid #eee;
+    background: linear-gradient(to right, #642b73, #c6426e);
+   
   }
 
   textarea {
@@ -115,21 +115,20 @@
     border-radius: 4px;
     resize: none;
     font-family: monospace;
+    background: linear-gradient(to right, #42275a, #734b6d);
+    color: #fff;
   }
 
   .copy-btn {
     margin-top: 1rem;
     width: 100%;
   }
-
+.mbc{
+  margin-bottom: 10px;
+}
   @media (max-width: 600px) {
     .colors {
       flex-direction: column;
     }
   }
 
-  /* h1{
-    background: #4a6cf7;
-    background: #f953c6;
-  }
-  */
