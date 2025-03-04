@@ -13,8 +13,8 @@
 
     // Initial colors
     let colors = [
-      { value: '#4a6cf7' },
-      { value: '#f953c6' }
+      { value: '#512DA8' },
+      { value: '#673AB7' }
     ];
 
     // Update gradient
